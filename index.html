@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventura - Download</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles can be added here */
+        body {
+            background-color: #f7fafc;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(45deg, #5a67d8, #9f7aea);
+        }
+
+        .pleasing-text {
+            color: #fff;
+        }
+
+        .pleasing-button {
+            background-color: #5a67d8;
+            color: #fff;
+        }
+
+        .pleasing-button:hover {
+            background-color: #434190;
+        }
+
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 120px 0;
+        }
+
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            background: linear-gradient(45deg, #5a67d8, #9f7aea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-title-download {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            background: linear-gradient(60deg, #ffffff, #b993ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-description {
+            font-size: 1.5rem;
+            color: #777;
+        }
+
+        /* Product Section */
+        .product-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .product-feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-feature-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-feature-description {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        /* About Us Section */
+        .about-section {
+            background: linear-gradient(45deg, #f8faff, #eff1fc);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="fixed-header bg-gray-900 py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-white text-2xl font-bold pleasing-text">Ventura</a>
+                <button class="text-white text-xl md:hidden focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                <ul class="hidden md:flex space-x-4">
+                    <li><a href="#home" class="text-white pleasing-text">Home</a></li>
+                    <li><a href="#about" class="text-white pleasing-text">About Us</a></li>
+                    <li><a href="#product" class="text-white pleasing-text">Product</a></li>
+                    <li><a href="#download"
+                            class="text-white pleasing-text bg-blue-500 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-blue-700">Download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="py-20 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="section-content">
+                <h1 class="text-4xl font-bold mb-8 pleasing-text"><span class="normal-font">Welcome to</span> <span
+                        class="font-bold">Ventura</span></h1>
+                <p class="text-lg text-white">Empower your attendance management with our <span
+                        class="font-bold">advanced face recognition software.</span></p>
+                <p class="mt-4 text-gray-200 text-sm">Transforming the way you track attendance.</p>
+                <p class="mt-4 text-gray-200">Elevate your attendance management to a new level of accuracy and
+                    efficiency
+                    with Ventura. Our cutting-edge face recognition technology ensures reliable identification, while
+                    our
+                    user-friendly interface simplifies the process. Experience the future of attendance tracking with
+                    Ventura.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section about-section">
+        <div class="container mx-auto px-4">
+            <div class="section-content">
+                <h2 class="section-title mb-8 text-gradient">About Us</h2>
+                <p class="section-description text-gray-800">I'm Nihar Gandhi, a dedicated software developer
+                    passionate about creating innovative solutions. With Ventura, I aim to revolutionize attendance
+                    tracking by providing a robust face recognition system that simplifies and automates the process.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Description Section -->
+    <section id="product" class="section bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="section-content">
+                <h2 class="section-title mb-8 text-blue-500">Product Description</h2>
+                <div class="product-features">
+                    <div class="product-feature">
+                        <i class="fas fa-check-circle product-feature-icon text-3xl text-blue-500"></i>
+                        <h3 class="product-feature-title">Accurate Face Recognition Technology</h3>
+                        <p class="product-feature-description">Ventura employs advanced algorithms to ensure precise and
+                            reliable face recognition.</p>
+                    </div>
+                    <div class="product-feature">
+                        <i class="fas fa-chart-line product-feature-icon text-3xl text-blue-500"></i>
+                        <h3 class="product-feature-title">Efficient Attendance Tracking</h3>
+                        <p class="product-feature-description">Track attendance seamlessly with Ventura's automated
+                            system, reducing manual effort and errors.</p>
+                    </div>
+                    <div class="product-feature">
+                        <i class="fas fa-user product-feature-icon text-3xl text-blue-500"></i>
+                        <h3 class="product-feature-title">User-Friendly Interface</h3>
+                        <p class="product-feature-description">Enjoy a simple and intuitive interface that makes
+                            navigating Ventura a breeze.</p>
+                    </div>
+                    <div class="product-feature">
+                        <i class="fas fa-clock product-feature-icon text-3xl text-blue-500"></i>
+                        <h3 class="product-feature-title">Real-Time Monitoring</h3>
+                        <p class="product-feature-description">Monitor attendance in real-time and stay updated with
+                            live data insights.</p>
+                    </div>
+                    <div class="product-feature">
+                        <i class="fas fa-file-alt product-feature-icon text-3xl text-blue-500"></i>
+                        <h3 class="product-feature-title">Customizable Reporting</h3>
+                        <p class="product-feature-description">Generate detailed reports tailored to your specific
+                            requirements, enabling better analysis and decision-making.</p>
+                    </div>
+                    <div class="product-feature">
+                        <i class="fas fa-lock product-feature-icon text-3xl text-blue-500"></i>
+                        <h3 class="product-feature-title">Secure Data Storage</h3>
+                        <p class="product-feature-description">Rest assured with Ventura's robust security measures
+                            and encrypted data storage, ensuring the privacy and protection of sensitive information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="section-content">
+                <h2 class="section-title-download mb-8 pleasing-text">Download</h2>
+                <p class="text-white">Experience the convenience of Ventura by downloading it today.</p>
+                <a href="Ventura - Automated-2.1.1-win64.msi"
+                    class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full mt-8 pleasing-button">Download
+                    Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-4">
+        <div class="container mx-auto px-4">
+            <p class="text-white text-center">© 2023 Ventura. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="path/to/your/script.js"></script>
+</body>
+
+</html>
