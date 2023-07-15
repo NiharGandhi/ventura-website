@@ -116,39 +116,35 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="bg-gray-800 py-4">
+    <header class="fixed-header bg-gray-900 py-4">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center">
-                <a href="#" class="text-white text-2xl font-bold">Ventura</a>
-                <button class="text-white text-xl md:hidden focus:outline-none" id="mobile-menu-button">
+                <a href="#" class="text-white text-2xl font-bold pleasing-text">Ventura</a>
+                <button class="text-white text-xl md:hidden focus:outline-none">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
-                <ul class="hidden md:flex space-x-4" id="desktop-menu">
-                    <li><a href="#home" class="text-white">Home</a></li>
-                    <li><a href="#about" class="text-white">About Us</a></li>
-                    <li><a href="#product" class="text-white">Product</a></li>
-                    <li><a href="#download" class="text-white">Download</a></li>
+                <ul class="hidden md:flex space-x-4">
+                    <li><a href="#home" class="text-white pleasing-text">Home</a></li>
+                    <li><a href="#about" class="text-white pleasing-text">About Us</a></li>
+                    <li><a href="#product" class="text-white pleasing-text">Product</a></li>
+                    <li><a href="#download"
+                            class="text-white pleasing-text bg-blue-500 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-blue-700">Download</a>
+                    </li>
                 </ul>
             </div>
-            <ul class="md:hidden" id="mobile-menu">
-                <li><a href="#home" class="block text-white py-2">Home</a></li>
-                <li><a href="#about" class="block text-white py-2">About Us</a></li>
-                <li><a href="#product" class="block text-white py-2">Product</a></li>
-                <li><a href="#download" class="block text-white py-2">Download</a></li>
-            </ul>
         </div>
-    </nav>
+    </header>
 
     <!-- Home Section -->
     <section id="home" class="py-20 gradient-bg">
         <div class="container mx-auto px-4">
             <div class="section-content">
-                <h1 class="text-4xl font-bold mb-8 pleasing-text"><span class="normal-font">Welcome to</span> <span
-                        class="font-bold">Ventura</span></h1>
+                <h1 class="text-4xl mb-8 pleasing-text">Welcome to <span
+                        class="font-bold">Ventura.</span></h1>
                 <p class="text-lg text-white">Empower your attendance management with our <span
                         class="font-bold">advanced face recognition software.</span></p>
                 <p class="mt-4 text-gray-200 text-sm">Transforming the way you track attendance.</p>
@@ -243,21 +239,7 @@
         </div>
     </footer>
 
-    <script>
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const desktopMenu = document.getElementById('desktop-menu');
-
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-
-    window.addEventListener('resize', () => {
-        if (window.innerWidth >= 768) {
-            mobileMenu.classList.add('hidden');
-        }
-    });
-</script>
+    <script src="path/to/your/script.js"></script>
 </body>
 
 </html>
